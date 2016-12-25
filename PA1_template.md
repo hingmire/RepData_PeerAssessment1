@@ -4,11 +4,6 @@ Process/transform the data (if necessary) into a format suitable for your analys
 
 
 ```r
-## 2. Set working directory
-
-fileloc <- "D:/Data science/Course 5/Week 2"
-setwd(fileloc)
-
 ## 3. Download Data
 
 ## download data and unzip it
@@ -18,13 +13,7 @@ setwd(fileloc)
 ## 4. Unzip Data
     
 unzip("repdata%2Fdata%2Factivity.zip")
-```
 
-```
-## Error in unzip("repdata%2Fdata%2Factivity.zip"): cannot open file './activity.csv': Permission denied
-```
-
-```r
 ## Read Data
 
 activity <- read.csv("activity.csv")
